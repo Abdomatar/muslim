@@ -1,0 +1,228 @@
+:root{
+    --red-color :brown;
+    --seacend-color :#ffc107;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    font-family: 'Lateef', cursive;
+}
+
+::selection{
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    border-bottom: 1px solid var(--seacend-color); 
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 18px;
+}
+
+/* start Nav bar */
+
+nav.container {
+    position: relative;
+    background-color: #000000;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85px;
+}
+
+.box-container .logo {
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color:#936e00 ;
+    
+}
+
+.box-container .logo h2 {
+    color: #fff;
+    margin: 0.7rem;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+nav.container .box-container .ul-box ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.container .box-container .ul-box ul li {
+    padding: 2rem;
+    height: 85px;
+}
+
+@media (max-width:700px){
+    nav.container .box-container .ul-box ul li{
+        padding: 41px 53px 5px -53px;
+        width: 4px;
+    }
+}
+@media (max-width:500px){
+    nav.container .box-container .ul-box ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    z-index: 100;
+    background-color: #777;
+}
+
+nav.container .box-container .ul-box ul li{
+    width: 197px;
+    background: #323232;
+    text-align: center;
+    margin: 2px;
+    font-size: 25px;
+    border-left: .3rem solid #ddd;
+}
+
+}
+
+nav.container .box-container .ul-box ul li a{
+    color: #fff;
+}
+nav.container .box-container .ul-box ul li:hover a{
+    color:#ffeb3b;
+    }
+
+
+
+.sign {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: center;
+    height: 80px;
+}
+
+@media (max-width:500px){
+    .sign{
+        display: none;
+    }
+}
+
+.sign  h2 a{
+    color: #fff;
+}
+
+.sign  h2 a:hover{
+    color:#ffc107;
+    
+}
+
+#bar-one {
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width:500px){
+    #bar-one{
+        display: block;
+    }
+}
+
+nav.container .box-container .ul-box ul.active{
+    display: block;
+}
+
+
+/* end Nav bar */
+div.containr{
+    position: relative;
+   background-image:linear-gradient(169deg,rgb(4 9 30 / 88%),rgb(30 32 8 / 89%)),
+    url(quran-images/WhatsApp\ Image\ 2022-01-01\ at\ 6.48.04\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+    direction: rtl;
+}
+.containr .content{
+    top: 258px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    height: 17%;
+    padding: 20px;
+    translate: -50% -50%;
+}
+.title{
+    text-align: center;
+}
+.table{
+    margin: 80px 139px 80px 150px;
+    padding: 30px;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0px 2px 9px;
+    direction: rtl;
+ }
+.table td,.table th{
+    padding: 12px 15px;
+    background: #f1d9bc; 
+    text-align: center;
+    font-size: 26px;
+}
+.table th{
+    background-color: bisque;
+    color: brown;
+}
+.table tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+.table td a{
+    text-decoration: none;
+    color:#0064c2 ;
+}
+/* start footer */
+footer .contentt {
+    min-height:40px;
+    margin:auto;
+    padding:5px 0;
+    text-align: center;
+    background-color: brown;
+}
+
+footer .contentt p{
+    color: #fff;
+    padding:5px;
+}
+
+/* End footer */
